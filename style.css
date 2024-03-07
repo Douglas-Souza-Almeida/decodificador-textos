@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&family=Ubuntu&display=swap');
+
+:root {
+        --primary-color: #FFF6E9;
+        --background-image: url('./img/background_image.jpg');
+        --background-color-header: #201658;
+        --button-hover: #3C415C;
+        --button-color-background: #22092C;
+        --button-color-border: #FFF6E0;
+        --button-color-font: #FFFFFF;
+        --textarea-color-background: #151515;
+        --textarea-color-font: #E1D89F;
+        --box-shadow-color: #8CABFF;
+        --font-primary: 'Ubuntu', Arial, Helvetica, sans-serif;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--primary-color);
+    background: var(--background-image);
+    background-size: cover; 
+}
+
+.cabecalho {
+    display: flex;
+    align-items:center;
+    background-color: var(--background-color-header);
+    gap: 3vh;
+
+}
+
+.cabecalho img {
+    height: 10vh;
+    padding: 0.5vh;
+}
+.cabecalho h1 {
+    font-family: var(--font-primary);
+    font-size: 5vh;
+}
+
+.cabecalho__alerta {
+    font-family: var(--font-primary);
+    font-size: 3vh;
+}
+
+.principal__texto {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.principal__texto-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+#input_textarea {
+    width: 72vh;
+    height: 36vh;
+    background-color: var(--textarea-color-background);
+    color: var(--textarea-color-font);
+    box-shadow: 0 1vh 1vh var(--box-shadow-color);
+    font-family: var(--font-primary);
+    font-size: 2.1vh;
+    text-align: justify;
+    line-height: 5vh;
+    padding: 1vh;
+}
+
+.principal__texto-input__botoes {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+
+}
+.principal__texto-input__botoes button {
+    cursor: pointer;
+    width: 24vh;
+    height: 7.2vh;
+    font-size: 2vh;
+    color: var(--button-color-font);
+    background-color: var(--button-color-background);
+    border: 0.1vh solid var(--button-color-border);
+    box-shadow: 0 1vh 1vh var(--box-shadow-color);
+    border-radius: 1vh;
+}
+
+.principal__texto-input__botoes button:hover {
+    background-color: var(--button-hover);
+}
+
+.principal__texto-output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+#output_textarea {
+    width: 72vh;
+    height: 36vh;
+    background-color: var(--textarea-color-background);
+    color: var(--textarea-color-font);
+    box-shadow: 0 1vh 1vh var(--box-shadow-color);
+    font-family: var(--font-primary);
+    font-size: 2.1vh;
+    text-align: justify;
+    line-height: 5vh;
+    padding: 1vh;
+}
+
+.principal__texto-output__botoes button {
+    cursor: pointer;
+    width: 24vh;
+    height: 7.2vh;
+    font-size: 2vh;
+    color: var(--button-color-font);
+    background-color: var(--button-color-background);
+    border: 0.1vh solid var(--button-color-border);
+    box-shadow: 0 1vh 1vh var(--box-shadow-color);
+    border-radius: 1vh;
+}
+
+.principal__texto-output__botoes button:hover {
+    background-color: var(--button-hover);
+}
+
+.principal__texto__imagens img {
+    border-radius: 1vh;
+    box-shadow: 0 1vh 1vh var(--box-shadow-color);
+    height: 37vh;
+    margin: 1vh;
+
+}
+
+.principal__texto__imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 1vh;
+}
+
+.principal__texto__imagens button {
+    cursor: pointer;
+    width: 24vh;
+    height: 7.2vh;
+    font-size: 2vh;
+    color: var(--button-color-font);
+    background-color: var(--button-color-background);
+    border: 0.1vh solid var(--button-color-border);
+    box-shadow: 0 1vh 1vh var(--box-shadow-color);
+    border-radius: 1vh;
+}
+
+.principal__texto__imagens button:hover {
+    background-color: var(--button-hover);
+}
+
+.rodape {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    font-family: var(--font-primary);
+    font-size: 2vh;
+    color: var(--button-color-font);
+}
+
+.rodape__redes a {
+    padding: 4vh;
+}
+
+.rodape img {
+    width: 4vh;
+}
+
+.rodape img:hover {
+    transform: scale(1.50); /*para ampliar ao passar o mouse*/
+}
+
+@media (max-width: 1220px) {
+    body {
+        background-size:auto;
+    }
+
+    .cabecalho {
+        gap: 0.1vh;
+    
+    }
+    
+    .cabecalho img {
+        height: 3vh;
+        padding: 0.1vh;
+    }
+    .cabecalho h1 {
+        font-size: 2vh;
+    }
+    
+    .cabecalho__alerta {
+        font-size: 1vh;
+    }
+
+    .principal__texto {
+        flex-direction: column;
+        gap: 1vh;
+        padding: 1vh;
+    }
+    
+    
+    #input_textarea {
+        width: 45vh;
+        height: 10vh;
+        box-shadow: 0 1vh 1vh var(--box-shadow-color);
+        font-size: 1vh;
+        line-height: 1vh;
+        padding: 0;
+    }
+
+    #output_textarea {
+        width: 45vh;
+        height: 10vh;
+        box-shadow: 0 1vh 1vh var(--box-shadow-color);
+        font-size: 1vh;
+        line-height: 1vh;
+        padding: 0;
+    }
+
+    .principal__texto-input__botoes button {
+        width: 8vh;
+        height: 2.4vh;
+        font-size: 0.7vh;
+        border: 0.1vh solid var(--button-color-border);
+        box-shadow: 0 1vh 1vh var(--box-shadow-color);
+        border-radius: 0.3vh;
+    }
+
+    .principal__texto-output__botoes button {
+        width: 8vh;
+        height: 2.4vh;
+        font-size: 0.7vh;
+        border: 0.1vh solid var(--button-color-border);
+        box-shadow: 0 1vh 1vh var(--box-shadow-color);
+        border-radius: 0.3vh;
+    }
+
+    .principal__texto__imagens img {
+        display: none;
+    }
+
+    .principal__texto__imagens button {
+        width: 8vh;
+        height: 2.4vh;
+        font-size: 0.7vh;
+        border: 0.1vh solid var(--button-color-border);
+        box-shadow: 0 1vh 1vh var(--box-shadow-color);
+        border-radius: 0.3vh;
+    }
+
+    .rodape {
+        margin-top: 30vh;
+        gap: 0.5vh;
+        font-size: 1vh;
+    }
+
+    .rodape__redes a {
+        padding: 1vh;
+    }
+    
+    .rodape img {
+        width: 3vh;
+    }
+}

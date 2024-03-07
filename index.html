@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon"  type="image/x-icon" href="./assets/key_.png">
+    <title>Decodificador de textos</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./assets/key_.png" alt="logo de uma chave">
+        <div class="cabecalho__texto">
+            <h1>DECODIFICADOR DE <strong>TEXTOS</strong></h1>
+            <div class="cabecalho__alerta">Utilize somente letras minúsculas, sem acentos e sem caracteres especiais</div>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="principal__texto">
+            <div class="principal__texto-input">
+                <div>
+                    <textarea id="input_textarea" class="principal_texto-input_textareainput" cols="50" rows="4" placeholder="Digite o texto a ser encriptado..."></textarea>
+                </div>
+                <div class="principal__texto-input__botoes">
+                    <button class="principal__texto-input__botoes__encriptar" onclick="btnCriptografar()">CRIPTOGRAFAR</button>
+                    <button class="principal__texto-input__botoes__descriptografar" onclick="btnDescriptografar()">DESCRIPTOGRAFAR</button> 
+                    <button class="principal__texto-input__botoes__colar" onclick="btnColar()">COLAR</button>
+                </div>
+            </div>
+            
+            <div class="principal__texto-output">
+                <div>
+                    <textarea id="output_textarea" class="principal__texto-output__textareaoutput" cols="50" rows="4" placeholder="Nenhuma mensagem encontrada..."></textarea>
+                </div>
+                <div class="principal__texto-output__botoes">
+                    <button class="principal__texto-output__botoes_copiar" onclick="btnCopiar()">COPIAR</button>
+                </div>
+            </div>
+            <div class="principal__texto__imagens">
+                <img src=".\img\img-busca.png" alt="garota realizando busca">
+                <button class="principal__texto__imagens__botao" onclick="btnLimpar()">LIMPAR</button>
+            </div>
+    </section>
+    </main>
+   
+    <footer class="rodape">
+        <p class="rodape__apresentacao">Desenvolvido por: Douglas de Souza Almeida</p>
+        <div class="rodape__redes">
+            <a href="https://github.com/Douglas-Souza-Almeida">
+                <img src="./assets/github.png" alt="logo github"></a>
+            <a href="https://www.linkedin.com/in/douglasdesouzaalmeida/">
+                <img src="./assets/linkedin.png"></a>
+        </div>
+            
+    </footer>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
